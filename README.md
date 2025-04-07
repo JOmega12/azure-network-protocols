@@ -5,3 +5,37 @@
 
 
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
+In this tutorial, we will observe a network between two virtual machines. We will be observing ICMP traffic, SSH traffic, DHCP traffic, DNS traffic, and RDP traffic. It's crucial to know how network traffic works because knowing how data flows across a network enables IT professionals to diagnose and troubleshoot performance issues, identify security threats, and others
+
+<h2>Environments and Technologies Used</h2>
+
+- Microsoft Azure
+- Remote Desktop Protocol
+- Wireshark (Protocol Analyzer)
+
+<h2>Operating Systems Used </h2>
+
+- Windows 10 Pro (21H2)
+- Ubuntu Server 20.04
+
+<h2>Key Steps</h2>
+
+- Create Resource Group
+- Create Virtual Network 
+- Create Windows 10 Machine
+- Create Ubuntu Server Machine
+- Install WireShark in Windows 10 Machine 
+- Observe ICMP Traffic
+- Configure Firewall (Network Security Group)
+- Observe SSH Traffic
+- Observe DHCP Traffic
+- Observe DNS Traffic
+- Observe RDP Traffic
+
+<h2>Actions</h2>
+
+
+
+<h2>Conclusion</h2>
+
+<p></p>
