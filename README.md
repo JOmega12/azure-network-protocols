@@ -16,7 +16,7 @@ In this tutorial, we will observe a network between two virtual machines. We wil
 <h2>Operating Systems Used </h2>
 
 - Windows 10 Pro (21H2)
-- Ubuntu Server 20.04
+- Ubuntu Server 22.04
 
 <h2>Key Steps</h2>
 
@@ -32,7 +32,23 @@ In this tutorial, we will observe a network between two virtual machines. We wil
 - Observe DNS Traffic
 - Observe RDP Traffic
 
-<h2>Actions</h2>
+<h2>Actions and Observations</h2>
+
+
+<h3>Create Resource Group</h3>
+
+<h3>Create Windows 10 Machine</h3>
+
+- Create your Windows VM and choose the Windows 10 Pro for your image
+
+- Make your size is at minimum 2vcpus and 8gb of memory
+
+<h3>Create a Linux/ Ubuntu Server</h3>
+
+- Same process the previous step!
+- Only difference is that your image is Ubuntu 22.04
+
+
 
 
 
