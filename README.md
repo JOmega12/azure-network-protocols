@@ -21,7 +21,6 @@ In this tutorial, we will observe a network between two virtual machines. We wil
 <h2>Key Steps</h2>
 
 - Create Resource Group
-- Create Virtual Network 
 - Create Windows 10 Machine
 - Create Ubuntu Server Machine
 - Install WireShark in Windows 10 Machine 
@@ -52,6 +51,38 @@ In this tutorial, we will observe a network between two virtual machines. We wil
 <h3>Install Wireshark in Windows 10 Machine</h3>
 
 - In the windows 10 machine, install <a href="https://www.wireshark.org/">wireshark</a> 
+
+- Start Packet capture (it's the shark fin)
+- What this means is that youre seeing all the stuff that's happening on the backend of the computer. The computer is communicating all these traffic within each other and the numbers are known as packets
+
+
+<h3>Observe ICMP Traffic</h3>
+
+- Within Wireshark, type on the search bar filter `icmp` which will only show ICMP traffic
+- Within Azure, we're going to copy the private IP address of Linux server and then attempt to ping it within the windows VM
+- Then, observe the reply and the response
+
+
+<h3>Configure Firewall for Network Security Group</h3>
+
+- Go to VM
+- Linux VM -> networking -> network setting -> Network Security Group (NSG) -> Left side Inbound Security Rules -> Configure rules based on this screenshot
+
+- And observe if we ping the linux private IP address and see that the request has timed out meaning that the firewall worked
+
+
+- Now delete the Configured Rules 290 and the reobserve after you ping again
+
+
+<h3>Observe SSH Traffic</h3>
+
+<h3>Observe DHCP Traffic</h3>
+
+<h3>Observe DNS Traffic</h3>
+
+<h3>Observe RDP Traffic</h3>
+
+
 
 <h2>Conclusion</h2>
 
