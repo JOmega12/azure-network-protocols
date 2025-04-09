@@ -49,8 +49,9 @@ In this tutorial, we will observe a network between two virtual machines. We wil
 - Only difference is that your image is Ubuntu 22.04
 
 
+<h3>Install Wireshark in Windows 10 Machine</h3>
 
-
+- In the windows 10 machine, install <a href="https://www.wireshark.org/">wireshark</a> 
 
 <h2>Conclusion</h2>
 
