@@ -76,14 +76,39 @@ In this tutorial, we will observe a network between two virtual machines. We wil
 
 <h3>Observe SSH Traffic</h3>
 
+- In Wireshark, start a packet capture (it's the shark fin from earlier)
+- Filter for SSH by writing on filter search `ssh`
+- Then from Powershell, type `ssh labuser@privateIPAddress` with the Ubuntu/linux private IP server
+
+
+- PLEASE NOTE: you will be asked to login from the powershell for the ubuntu/linux server. Login into that using that VM's login info
+
 <h3>Observe DHCP Traffic</h3>
+
+- Back in Wireshark, filter for `DHCP` traffic
+- From the WindowsVM in powershell administrator, type in `ipconfig /renew` then observe the traffic that comes in
+
 
 <h3>Observe DNS Traffic</h3>
 
+- Back in Wireshark, filter for `DNS` traffic
+- Then on the command line, use nsloopkup for google.com to retrieve the ip address of google.com then observe
+
+  
+
 <h3>Observe RDP Traffic</h3>
 
+- Within Wireshark, filter RDP port `tcp.port == 3389` then observe
+- The reason why there is a lot of network is because RDP is constantly streaming from the server to our local machine 
+
+
+<h3>Clean Up</h3>
+
+- To clean up your environment, you go to Azure -> Resource Groups and Delete the resource group where the Virtual Machine lives.
 
 
 <h2>Conclusion</h2>
+Congrats on making through the project! I hope this tutorial has taught you how to use Azure and VM and understand how data flows to the network!
+
 
 <p></p>
